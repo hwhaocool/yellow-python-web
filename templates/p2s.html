@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Yellow Flask Web</title>
+  <meta name="description" content="这是一个form页面">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="static/AmazeUI-2.7.2/assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="static/AmazeUI-2.7.2/assets/css/app.css">
+  <link rel="stylesheet" href="static/AmazeUI-2.7.2/assets/css/admin.css">
+</head>
+
+<body>
+
+  <header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+      <strong>Yellow Web</strong> <small>Convert Protobuf to Swagger</small>
+    </div>
+  </header>
+
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf">
+          <strong class="am-text-primary am-text-lg">xx</strong> /
+          <small>form</small>
+        </div>
+      </div>
+
+      <div class="am-container">
+        <div id="interfaceUrl" style="display:none;">{{interfaceUrl}}</div> 
+      </div>
+
+      <div class="am-g">
+        <div class="am-fl am-u-sm-6" >
+          <div>
+              <label for="doc-ta-1">protobuf</label>
+          </div>
+          <div>
+            <textarea class="am-scrollable-vertical yellow-textarea" id="id-p"></textarea>
+          </div>
+        </div>
+
+        <div class="am-center am-u-sm-1">
+          <button type="button" class="am-btn am-btn-success am-round" id="go-btn">Go</button>
+        </div>
+
+        <div class="am-fr am-u-sm-5">
+            <div>
+                <label for="doc-ta-1">swagger</label>
+            </div>
+            <div>
+              <textarea class="am-scrollable-vertical yellow-textarea" id="id-s"></textarea>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <hr>
+    <p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
+  </footer>
+
+  <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+      <a href="#top" title="回到顶部">
+          <span class="am-gotop-title">回到顶部</span>
+            <i class="am-gotop-icon am-icon-chevron-up"></i>
+      </a>
+    </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="static/jquery-3.3.1.js"></script>
+  <!--<![endif]-->
+  <script src="static/AmazeUI-2.7.2/assets/js/amazeui.min.js"></script>
+  <script src="static/AmazeUI-2.7.2/assets/js/app.js"></script>
+  <script src="static/js/p2s.js"></script>
+</body>
+
+</html>

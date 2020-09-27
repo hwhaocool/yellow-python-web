@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Yellow Flask Web</title>
+  <meta name="description" content="这是一个form页面">
+  <meta name="keywords" content="form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="static/AmazeUI-2.7.2/assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="static/AmazeUI-2.7.2/assets/css/app.css">
+  <link rel="stylesheet" href="static/AmazeUI-2.7.2/assets/css/admin.css">
+</head>
+
+<body>
+
+  <header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+      <strong>Yellow Web</strong> <small>Convert Protobuf to Swagger</small>
+    </div>
+  </header>
+
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf">
+          <strong class="am-text-primary am-text-lg">xx</strong> 
+          <small>form</small>
+        </div>
+      </div>
+
+      <div class="am-container">
+        
+      </div>
+
+      <div class="am-g">
+
+        <div class="am-fl am-u-sm-6" >
+            <form class="am-form">
+                <fieldset>
+                  <legend>表单标题</legend>
+              
+                  <div class="am-form-group">
+                    <label for="doc-ipt-email-1">接口 Url</label>
+                    <input type="text" class="" id="interface-url" placeholder="输入接口 Url">
+                  </div>
+        
+                  <div class="am-form-group">
+                    <label for="doc-select-type">接口是新增，还是基于已有的进行更新</label>
+                    <select id="interface-type">
+                      <option value="add">新增</option>
+                      <option value="update">更新</option>
+                    </select>
+                    <span class="am-form-caret"></span>
+                  </div>
+        
+                  <div class="am-form-group">
+                    <label for="doc-ipt-email-1">接口 描述(选填)</label>
+                    <input type="text" class="" id="interface-desc" placeholder="输入接口描述">
+                  </div>
+        
+                  <div class="am-form-group">
+                    <label for="interface-method">接口方法类型</label>
+                    <select id="interface-method">
+                      <option value="Get">Get</option>
+                      <option value="Put">Put</option>
+                      <option value="Post">Post</option>
+                      <option value="Delete">Delete</option>
+                    </select>
+                    <span class="am-form-caret"></span>
+                  </div>
+        
+                  <div class="am-form-group">
+                    <label for="doc-ipt-email-1">接口 请求body（选填）</label>
+                    <input type="text" class="" id="request-body" placeholder="输入对象类型">
+                  </div>
+        
+                  <div class="am-form-group">
+                    <label for="doc-ipt-email-1">接口 返回body（选填）</label>
+                    <input type="text" class="" id="reponse-body" placeholder="输入对象类型">
+                  </div>
+              
+                  <p>
+                      <button type="button" class="am-btn am-btn-success am-round" id="go-btn">Go</button>
+                  </p>
+        
+                </fieldset>
+              </form>
+        </div>
+
+        <!-- <div class="am-center am-u-sm-1">
+          
+        </div> -->
+
+        <div class="am-fr am-u-sm-6">
+            <div>
+                <label for="doc-ta-1">MarkDown Wiki</label>
+            </div>
+            <div>
+              <textarea class="am-scrollable-vertical yellow-textarea" id="id-s"></textarea>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <hr>
+    <p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
+  </footer>
+
+  <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+      <a href="#top" title="回到顶部">
+          <span class="am-gotop-title">回到顶部</span>
+            <i class="am-gotop-icon am-icon-chevron-up"></i>
+      </a>
+    </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="static/jquery-3.3.1.js"></script>
+  <!--<![endif]-->
+  <script src="static/AmazeUI-2.7.2/assets/js/amazeui.min.js"></script>
+  <script src="static/AmazeUI-2.7.2/assets/js/app.js"></script>
+  <script src="static/js/wiki.js"></script>
+</body>
+
+</html>
